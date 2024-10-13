@@ -36,9 +36,6 @@ Install the necessary dependencies using `pip`:
 pip install -r requirements.txt
 ```
 
-
-Alternatively, you can also update the `settings.py` file directly for database settings.
-
 ### 4. Run Migrations
 Set up the database by applying the migrations:
 ```bash
