@@ -1,4 +1,3 @@
-Here’s a sample `README.md` that you can use for your Django URL shortener project. This will help document the project’s purpose, setup instructions, and how to run the application and tests.
 
 ```markdown
 # Django URL Shortener
@@ -15,13 +14,12 @@ A URL shortening service built with Django that allows users to create short, ma
 - [Running the Application](#running-the-application)
 - [Running Tests](#running-tests)
 - [API Endpoints](#api-endpoints)
-- [Future Enhancements](#future-enhancements)
 
 ## Project Setup
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/urlshortener.git
+git clone https://github.com/shanto-thomas/urlshortener.git
 cd urlshortener
 ```
 
@@ -38,30 +36,22 @@ Install the necessary dependencies using `pip`:
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment Variables
-Create a `.env` file in the project root and add your database and environment configuration:
-```
-SECRET_KEY=your-secret-key
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
-DATABASE_URL=postgres://user:password@localhost:5432/urlshortener
-```
 
 Alternatively, you can also update the `settings.py` file directly for database settings.
 
-### 5. Run Migrations
+### 4. Run Migrations
 Set up the database by applying the migrations:
 ```bash
 python manage.py migrate
 ```
 
-### 6. Create a Superuser (Optional)
+### 5. Create a Superuser (Optional)
 To access the Django admin panel, create a superuser:
 ```bash
 python manage.py createsuperuser
 ```
 
-### 7. Start the Development Server
+### 6. Start the Development Server
 Run the development server:
 ```bash
 python manage.py runserver
@@ -142,26 +132,3 @@ docker-compose down
 | POST   | `/api/shorten/`         | Shortens a given URL            |
 | GET    | `/<short_url>/`         | Redirects to the original URL   |
 
-## Future Enhancements
-
-- **Authentication**: Add user accounts for tracking and managing shortened URLs.
-- **Analytics**: Provide statistics for shortened URLs such as click counts and referrers.
-- **White-labeling**: Allow custom domains for shortened URLs.
-- **Expiration**: Set expiration dates for shortened URLs.
-- **Custom Aliases**: Allow users to create custom short URL aliases.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Happy shortening! 😃
-```
-
-### Explanation:
-- **Project Setup**: Step-by-step guide to set up the project, including cloning, environment setup, and running the server.
-- **Running the Application**: Instructions on how to use the application and the API endpoints.
-- **Running Tests**: Includes the commands for running tests and mentions Docker support if applicable.
-- **API Endpoints**: Lists available API endpoints.
-- **Future Enhancements**: Ideas for future improvements that align with SaaS readiness.
-- **License**: Adds a section for licensing (optional, based on your project).
